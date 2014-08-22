@@ -1,0 +1,64 @@
+* {
+	font-family: Georgia;
+}
+
+body {
+	background-color: #B6C7CC;
+}
+
+#header {
+	text-align: center;
+	font-size: 32px;
+	font-weight: bold;
+	color: #5A8A99;
+}
+
+img {
+	max-height: 300px;
+}
+
+#container {
+	text-align: center;
+	background-color: #FCFFFE;
+	border: 1px dashed #CCB6BC;
+	margin: auto;
+	margin-top: 10px;
+	padding-top: 20px;
+	padding-left: 10px;
+	padding-right: 10px;
+	width: 400px;
+	height: 200px;
+	max-height: 200px;
+	max-width: 400px;
+	color: #ED98B7;
+	font-size: 18px;
+	word-wrap: break-word;
+}
+
+#answers {
+	text-align: left;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.submit, .result, .result-final {
+	text-align: center;
+	background-color: #FFFFFF;
+	border: 1px dashed #CCB6BC;
+	color: #ED98B7;
+	padding: 5px;
+}
+
+#end {
+	margin-top: 45px;
+}
+
+.restart {
+	text-align: center;
+	background-color: #FFFFFF;
+	border: 1px dashed #CCB6BC;
+	color: #ED98B7;
+	margin-top: 25px;
+	padding: 5px;
+}
+

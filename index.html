@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="css/reset.css" type="text/css" />
+	<link rel="stylesheet" href="css/main.css" type="text/css" />
+	<script src="http://code.jquery.com/jquery.min.js"></script>
+	<script src="js/app.js"></script>
+	<title>Sailor Moon Quiz</title>
+</head>
+<body>
+	<div id="header">
+		<img src ="images/princess.gif" />
+		<header>Sailor Moon Quiz</header>
+	</div>
+
+<!-- Content -->
+<div id="container">
+<!-- Question/Answers -->
+<div id="quiz-container">
+	<p>Question <span id="count">1</span> of 5</p>
+<div id="quiz"></div>
+<div id="answers"></div>
+	<p>
+		<button class="submit">Submit</button>
+		<button class="result" style="display: none"></button>
+		<button class="result-final" style="display: none"></button>
+	</p>
+</div>
+<!-- Final Results -->
+<div id="end" style="display: none">
+		<p>Your Final Result:</p>
+		<p>You got <span id="total-correct">0</span> out of 5 correct!</p>
+		<button class="restart">Restart</button>
+</div>
+</div>
+</body>
+</html>
