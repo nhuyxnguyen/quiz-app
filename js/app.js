@@ -2,7 +2,7 @@ $(document).ready(function() {
 	var count = 1,
 		numberCorrect = 0,
 		currentQuestion = 0,
-		$answers = $('.answers'),
+		$answers = $('#answers'),
 		$count = $('#count'),
 		$end = $('#end'),
 		$quiz = $('#quiz'),
@@ -88,6 +88,8 @@ $(document).ready(function() {
 		$quizContainer.show();
 		$resultFinal.hide();
 		$submit.show();
+		$quiz.empty();
+		$answers.empty();
 		loadQuestion();
 	}
 
@@ -106,6 +108,8 @@ loadQuestion();
 			$submit.show();
 		if (currentQuestion <= 3) {
 			currentQuestion++;
+			$quiz.empty();
+			$answers.empty();
 			loadQuestion();
 			trackQuestionProgress();
 		}
