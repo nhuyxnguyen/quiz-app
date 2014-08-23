@@ -50,6 +50,8 @@ $(document).ready(function() {
 
 //Load question and choices
 	function loadQuestion() {
+		$quiz.empty();
+		$answers.empty();
 		$quiz.append('<p>' + allQuestions[currentQuestion].question + '</p>');
 		for (var i = 0; i <= 3; i++) {
 			document.getElementById('answers').innerHTML += '<input type="radio" name="choice" value='+i+'>' + allQuestions[currentQuestion].choices[i] + '<br/>';
@@ -88,8 +90,6 @@ $(document).ready(function() {
 		$quizContainer.show();
 		$resultFinal.hide();
 		$submit.show();
-		$quiz.empty();
-		$answers.empty();
 		loadQuestion();
 	}
 
@@ -108,8 +108,6 @@ loadQuestion();
 			$submit.show();
 		if (currentQuestion <= 3) {
 			currentQuestion++;
-			$quiz.empty();
-			$answers.empty();
 			loadQuestion();
 			trackQuestionProgress();
 		}
